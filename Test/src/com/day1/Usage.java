@@ -30,9 +30,15 @@ public class Usage {
         student.lastName = "Java ";
         student.sirName = "I ";
         student.firstname = "am ";
+
+
         System.out.println(student.getFullName());
 
 
+        Student student2 = new Student();
+        student2.getFullName();
+
+        System.out.println(student2.firstname);
 
     }
 }

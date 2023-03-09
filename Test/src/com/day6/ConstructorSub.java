@@ -2,14 +2,24 @@ package com.day6;
 
 public class ConstructorSub extends ConstructorSuper {
 
-    private int val;
+     int val;
 
     ConstructorSub(){
-        this(123);
+//        super();
+//        this(123);
         System.out.println("no arg ConstructorSub");
     }
 
     ConstructorSub(int val){
+        super(val);
+//        this(val, 45);
+        this.val = val;
         System.out.println("one arg ConstructorSub "+val );
+    }
+
+    ConstructorSub(int val, int val2){
+        super(val);
+        this.val = val;
+        System.out.println("two arg ConstructorSub "+val+" "+ val2 );
     }
 }

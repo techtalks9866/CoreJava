@@ -5,25 +5,27 @@ import com.day5.ConcreteClass;
 
 public class Usage {
     public static void main(String[] args) {
-        Student student = new Student(123,"Test", 550);
+//        ConstructorSub constructorSub = new ConstructorSub(1234);
+//
+//        System.out.println(constructorSub.val);
 
-        System.out.println(student.id +" "+ student.marks+ " "+ student.marks);
+//        DatLoadIntoObject datLoadIntoObject = new DatLoadIntoObject();
+////        datLoadIntoObject.age =18;
+//
+//        datLoadIntoObject.setAge(18);
+//
+//        datLoadIntoObject.printAge();
+//
+//        System.out.println(datLoadIntoObject.getAge());
+
+        System.out.println(StaticMembers.organaization);
+        System.out.println(StaticMembers.tempCoverter(35));
+        System.out.println(StaticMembersSub.tempCoverter(123));
+
+//        StaticMembers.organaization = "DEF bank";
 
 
 
-//        Constructordemo constructordemo = new Constructordemo();
-//        Constructordemo constructordemo = new Constructordemo(123);
-////        constructordemo.va
-//        System.out.println(constructordemo.val);
-//        constructordemo.setVal(123);
-//
-//
-//        Constructordemo constructordemo1 = new Constructordemo(123);
-//
-//
-//        ConstructorSub constructorSub = new ConstructorSub();
-//
-//        //static mebers
-//        System.out.println(StaticMembers.organaization);
+
     }
 }
