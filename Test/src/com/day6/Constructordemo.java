@@ -3,11 +3,11 @@ package com.day6;
 public class Constructordemo {
     public int val;
 
-    public Constructordemo() {
+    private Constructordemo() {
         System.out.println("No arg constructor");
     }
 
-    public Constructordemo(int val) {
+    private Constructordemo(int val) {
         this.val = val;
     }
 }
