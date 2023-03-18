@@ -19,31 +19,14 @@ public class ExceptionHandlingDemo {
         String s = null;
 //        System.out.println(s.toString());
         System.out.println("I am after exception");
-        new ExceptionHandlingDemo().test(s);
 
+        new ExceptionHandlingDemo().test(s);
     }
 
-    void test(String s){
+    void test(String s) throws NullPointerException{
 
-        try{
-            System.out.println(s.toString());
-        } catch (NullPointerException e){
-            System.out.println("I am from NullPointerException block"+e.getMessage());
-            e.printStackTrace();
-        } catch (ArrayIndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        } catch (Throwable e){
+        System.out.println(s.toString());
 
-        } finally {
-            System.out.println("I am finally block");
-        }
-
-
-        System.out.println("I am after exception");
         System.out.println("I am after exception1");
         System.out.println("I am after exception2");
         System.out.println("I am after exception3");
